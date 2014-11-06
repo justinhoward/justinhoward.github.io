@@ -4,8 +4,15 @@ title: About
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/)
+Software development is fun. Why not? This blog is about having fun with code and sharing my adventures and
+exploring new and exciting technology.
 
-You can find the source code for the Jekyll new theme at: [github.com/jglovier/jekyll-new](https://github.com/jglovier/jekyll-new)
+# About Me
 
-You can find the source code for Jekyll at [github.com/jekyll/jekyll](https://github.com/jekyll/jekyll)
+<image src="/images/justin.jpg" alt="Justin" class="float"/>
+
+I'm a web developer [by trade][work]. I adore my wife [Joy][joy],
+I love God, good food, good company, and every day living in beautiful Oregon.
+
+[joy]: http://ohjoylynn.com
+[work]: http://gobonzi.com

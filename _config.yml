@@ -1,14 +1,14 @@
 # Site settings
-title: Your awesome title
+title: Justin Howard
 email: jmhoward0@gmail.com
 description: >
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://justinhoward.org" # the base hostname & protocol for your site
+    Software development stories and adventures from
+    the front lines of the industry.
+baseurl: ""
+url: "http://justinhoward.org"
 twitter_username: jmhoward0
 github_username:  justinhoward
+permalink: /:title
 
 # Build settings
 markdown: kramdown
