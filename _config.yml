@@ -8,6 +8,7 @@ baseurl: ""
 url: "http://justinhoward.org"
 twitter_username: jmhoward0
 github_username:  justinhoward
+linkedin_username:  jmhoward0
 permalink: /:title
 
 # Build settings

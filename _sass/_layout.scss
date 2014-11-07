@@ -2,16 +2,33 @@
  * Site header
  */
 .site-header {
-	border-top: 5px solid $grey-color-dark;
-	border-bottom: 1px solid $grey-color-light;
+	border-bottom: 1px solid $grey-color;
 	min-height: 56px;
 
-	// Positioning context for the mobile navigation icon
-	position: relative;
+	background-color: $background-color;
+
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+
+	.rss {
+		float: right;
+		line-height: 56px;
+
+		&:hover {
+			color: $splash-color;
+		}
+
+		&, &:active {
+			color: $grey-color;
+		}
+	}
 }
 
 .site-title {
 	font-size: 26px;
+	font-weight: 300;
 	line-height: 56px;
 	letter-spacing: -1px;
 	margin-bottom: 0;
@@ -26,6 +43,9 @@
 .site-nav {
 	float: right;
 	line-height: 56px;
+	margin-right: $spacing-unit;
+
+	background-color: $background-color;
 
 	.menu-icon {
 		display: none;
@@ -43,6 +63,7 @@
 
 	@include media-query($on-palm) {
 		position: absolute;
+		z-index: 1;
 		top: 9px;
 		right: 30px;
 		background-color: $background-color;
@@ -55,18 +76,10 @@
 			float: right;
 			width: 36px;
 			height: 26px;
-			line-height: 0;
-			padding-top: 10px;
+			margin-top: 10px;
 			text-align: center;
-
-			> svg {
-				width: 18px;
-				height: 15px;
-
-				path {
-					fill: $grey-color-dark;
-				}
-			}
+			color: $grey-color;
+			text-decoration: none;
 		}
 
 		.trigger {
@@ -92,7 +105,7 @@
  * Site footer
  */
 .site-footer {
-	border-top: 1px solid $grey-color-light;
+	border-top: 1px solid $grey-color;
 	padding: $spacing-unit 0;
 }
 
@@ -105,6 +118,16 @@
 .social-media-list {
 	list-style: none;
 	margin-left: 0;
+
+	a:hover .fa {
+		color: $splash-color;
+	}
+
+	.fa {
+		color: $grey-color;
+		@extend .fa-lg;
+		margin-right: 5px;
+	}
 }
 
 .footer-col-wrapper {
@@ -162,7 +185,14 @@
  * Page content
  */
 .page-content {
-	padding: $spacing-unit 0;
+	padding: $spacing-unit 0 0 0;
+	background-color: $splash-color;
+
+	> .wrapper {
+		padding-top: 56px;
+		padding-bottom: $spacing-unit;
+		background-color: $background-color;
+	}
 }
 
 .page-heading {

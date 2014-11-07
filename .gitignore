@@ -1,2 +1,5 @@
 _site
 .sass-cache
+
+# Sublime Text
+/*.sublime-*
