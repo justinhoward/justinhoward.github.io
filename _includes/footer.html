@@ -39,6 +39,15 @@
 						</a>
 					</li>
 					{% endif %}
+
+					{% if site.stackoverflow_username %}
+					<li>
+						<a href="http://stackoverflow.com/users/{{ site.stackoverflow_url }}">
+							<span class="fa fa-stack-overflow"></span>
+							<span class="username">{{ site.stackoverflow_username }}</span>
+						</a>
+					</li>
+					{% endif %}
 				</ul>
 			</div>
 
