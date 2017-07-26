@@ -27,8 +27,6 @@ $splash-color:     #9AC46C;
 $on-palm:          600px;
 $on-laptop:        800px;
 
-
-
 // Using media queries with like this:
 // @include media-query($palm) {
 //     .wrapper {
@@ -37,17 +35,16 @@ $on-laptop:        800px;
 //     }
 // }
 @mixin media-query($device) {
-	@media screen and (max-width: $device) {
-		@content;
-	}
+  @media screen and (max-width: $device) {
+    @content;
+  }
 }
-
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
-	"base",
-	"font-awesome/font-awesome",
-	"layout",
-	"syntax-highlighting",
-	"util"
+  "base",
+  "font-awesome/font-awesome",
+  "layout",
+  "syntax-highlighting",
+  "util"
 ;
