@@ -11,8 +11,8 @@ exploring new and exciting technology.
 
 <image src="/images/justin.jpg" alt="Justin" class="float"/>
 
-I'm a web developer [by trade][work]. I adore my wife [Joy][joy],
-I love God, good food, good company, and every day living in beautiful Oregon.
+I'm a web developer [by trade][work]. I adore my wife Joy,
+I love God, good food, good company, and every day living in beautiful
+California.
 
-[joy]: http://ohjoylynn.com
-[work]: http://gobonzi.com
+[work]: http://machinima.com
