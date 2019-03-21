@@ -15,4 +15,4 @@ I'm a web developer [by trade][work]. I adore my wife Joy,
 I love God, good food, good company, and every day living in beautiful
 California.
 
-[work]: http://machinima.com
+[work]: https://parentsquare.com
