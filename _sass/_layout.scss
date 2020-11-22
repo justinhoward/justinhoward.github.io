@@ -117,13 +117,12 @@
   list-style: none;
   margin-left: 0;
 
-  a:hover .fa {
+  a:hover .fab {
     color: $splash-color;
   }
 
-  .fa {
+  .fab {
     color: $grey-color;
-    @extend .fa-lg;
     margin-right: 5px;
   }
 }
