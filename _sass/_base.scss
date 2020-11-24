@@ -177,6 +177,9 @@ pre {
 .caption {
   font-size: 14px;
   color: $grey-color-dark;
+  @include dark-mode {
+    color: $grey-color-light;
+  }
 }
 .caption {
   margin-top: -13px;
