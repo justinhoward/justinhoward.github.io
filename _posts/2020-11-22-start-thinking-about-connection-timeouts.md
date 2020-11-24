@@ -44,6 +44,8 @@ client.
 @read_timeout = 60
 @write_timeout = 60
 ```
+
+{: .caption}
 ([source](https://github.com/ruby/ruby/blob/b2d96abb42abbe2e01f010ffc9ac51f0f9a50002/lib/net/http.rb#L688-L690))
 
 The default for each of these is 60 seconds! Imagine if one of your third-party
@@ -63,6 +65,8 @@ internal var connectTimeout = 10_000
 internal var readTimeout = 10_000
 internal var writeTimeout = 10_000
 ```
+
+{: .caption}
 ([source](https://github.com/square/okhttp/blob/cd722373281202492043f4294fccfe6f691ddc01/okhttp/src/main/kotlin/okhttp3/OkHttpClient.kt#L494-L496))
 
 Regardless of the defaults for your HTTP client, they will likely not match the
@@ -98,6 +102,8 @@ if add_timeout?(options[:timeout])
   end
 end
 ```
+
+{: .caption}
 ([source](https://github.com/jnunemaker/httparty/blob/b9a54d8f73a9a94863bf83a1ba559b557c68b4c8/lib/httparty/connection_adapter.rb#L117-L124))
 
 It lets you write this

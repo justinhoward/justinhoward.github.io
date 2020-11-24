@@ -133,6 +133,28 @@ pre {
 }
 
 /**
+ * Callouts
+ */
+.callout {
+  margin: 36px 0;
+  padding: 8px 12px;
+  border: 1px solid $grey-color-light;
+  border-radius: 3px;
+  background-color: $grey-color-light;
+}
+
+/**
+ * Small
+ */
+.caption {
+  font-size: 14px;
+  color: $grey-color-dark;
+}
+.caption {
+  margin-top: -13px;
+}
+
+/**
  * Wrapper
  */
 .wrapper {
