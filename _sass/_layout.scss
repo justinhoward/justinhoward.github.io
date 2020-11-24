@@ -2,7 +2,7 @@
  * Site header
  */
 .site-header {
-  border-bottom: 1px solid $grey-color;
+  border-bottom: 1px solid $grey-color-x-dark;
   min-height: 56px;
 
   background-color: $background-color;
@@ -35,14 +35,14 @@
     &, &:active {
       color: $grey-color;
       @include dark-mode {
-        color: $grey-color;
+        color: $grey-color-x-dark;
       }
     }
 
     &:hover {
       color: $splash-color;
       @include dark-mode {
-        color: $grey-color-dark;
+        color: $grey-color-light;
       }
     }
 
@@ -129,7 +129,7 @@
  * Site footer
  */
 .site-footer {
-  border-top: 1px solid $grey-color;
+  border-top: 1px solid $grey-color-x-dark;
   padding: $spacing-unit 0;
 
   @include dark-mode {
@@ -150,7 +150,7 @@
   a:hover .fab {
     color: $splash-color;
     @include dark-mode {
-      color: $grey-color-dark;
+      color: $grey-color-light;
     }
   }
 
@@ -163,6 +163,10 @@
   .fab {
     color: $grey-color;
     margin-right: 5px;
+
+    @include dark-mode {
+      color: $grey-color-x-dark;
+    }
   }
 }
 
