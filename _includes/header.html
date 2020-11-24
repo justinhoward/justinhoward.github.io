@@ -1,7 +1,10 @@
 <header class="site-header">
   <div class="wrapper">
-    <a class="site-title" href="{{ site.baseurl }}/">{{ site.title }}</a>
-    <a title="Subscribe with RSS" class="rss" href="{{ "/feed.xml" | prepend: site.baseurl }}">
+    <a title="Home" aria-label="Home" class="site-title" href="{{ site.baseurl }}/">{{ site.title }}</a>
+    <a title="Dark Mode" aria-label="Dark Mode" role="button" class="dark-mode" href="#">
+      <span class="fa fa-moon fa-lg"></span>
+    </a>
+    <a title="Subscribe with RSS" aria-label="Subscribe with RSS" class="rss" href="{{ "/feed.xml" | prepend: site.baseurl }}">
       <span class="fa fa-rss fa-lg"></span>
     </a>
     <nav class="site-nav">

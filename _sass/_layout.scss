@@ -6,22 +6,44 @@
   min-height: 56px;
 
   background-color: $background-color;
+  @include dark-mode {
+    background-color: $splash-color;
+  }
 
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
 
-  .rss {
+  @include media-query($on-palm) {
+    font-size: 14px;
+  }
+
+  .layout-post & {
+    min-height: 28px;
+  }
+
+  .rss, .dark-mode {
     float: right;
     line-height: 56px;
+    margin-right: $spacing-unit;
 
-    &:hover {
-      color: $splash-color;
+    @include media-query($on-palm) {
+      margin-right: $spacing-unit / 2;
     }
 
     &, &:active {
       color: $grey-color;
+      @include dark-mode {
+        color: $grey-color;
+      }
+    }
+
+    &:hover {
+      color: $splash-color;
+      @include dark-mode {
+        color: $grey-color-dark;
+      }
     }
 
     .layout-post & {
@@ -29,8 +51,24 @@
     }
   }
 
-  .layout-post & {
-    min-height: 28px;
+  .dark-mode {
+    .fa {
+      font-weight: 400;
+    }
+
+    &:hover .fa {
+      font-weight: 900;
+    }
+
+    @include dark-mode {
+      .fa {
+        font-weight: 900;
+      }
+
+      &:hover .fa {
+        font-weight: 400;
+      }
+    }
   }
 }
 
@@ -45,6 +83,9 @@
   &,
   &:visited {
     color: $grey-color-dark;
+    @include dark-mode {
+      color: $grey-color-dark;
+    }
   }
 
   .layout-post & {
@@ -58,7 +99,9 @@
   line-height: 56px;
   margin-right: $spacing-unit;
 
-  background-color: $background-color;
+  @include media-query($on-palm) {
+    margin-right: $spacing-unit / 2;
+  }
 
   .layout-post & {
     line-height: 28px;
@@ -70,6 +113,9 @@
 
   .page-link {
     color: $text-color;
+    @include dark-mode {
+      color: $text-color;
+    }
     line-height: $base-line-height;
 
     // Gaps between nav items, but not on the first one
@@ -85,6 +131,10 @@
 .site-footer {
   border-top: 1px solid $grey-color;
   padding: $spacing-unit 0;
+
+  @include dark-mode {
+    background-color: $splash-color;
+  }
 }
 
 .footer-heading {
@@ -99,6 +149,15 @@
 
   a:hover .fab {
     color: $splash-color;
+    @include dark-mode {
+      color: $grey-color-dark;
+    }
+  }
+
+  @include dark-mode {
+    a, a:active, {
+      color: $text-color;
+    }
   }
 
   .fab {
@@ -109,7 +168,7 @@
 
 .footer-col-wrapper {
   font-size: 15px;
-  color: $grey-color;
+  color: $grey-color-dark;
   margin-left: -$spacing-unit / 2;
   @extend %clearfix;
 }
@@ -163,6 +222,10 @@
   padding: 56px 0 0 0;
   background-color: $splash-color;
 
+  @include dark-mode {
+    background-color: $theme-dark-site-background-color;
+  }
+
   .layout-post & {
     padding-top: 28px;
   }
@@ -171,6 +234,11 @@
     padding-top: $spacing-unit;
     padding-bottom: $spacing-unit;
     background-color: $background-color;
+
+    @include dark-mode {
+      background-color: $theme-dark-background-color;
+    }
+
     .layout-post & {
       padding-top: 28px;
     }
@@ -192,7 +260,11 @@
 
 .post-meta {
   font-size: $small-font-size;
-  color: $grey-color;
+  color: $grey-color-dark;
+
+  @include dark-mode {
+    color: $grey-color-light;
+  }
 }
 
 .post-link {

@@ -1,7 +1,7 @@
 ---
 # Only the main Sass file needs front matter (the dashes are enough)
 ---
-@charset "utf-8";
+@charset 'utf-8';
 
 // Our variables
 $base-font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif;
@@ -18,10 +18,15 @@ $brand-color:      #2a7ae2;
 $grey-color:       #828282;
 $grey-color-light: lighten($grey-color, 40%);
 $grey-color-dark:  darken($grey-color, 25%);
-$code-background-color: #EDF3FF;
+$code-background-color: #edf3ff;
 
+$splash-color:     #9ac46c;
 
-$splash-color:     #9AC46C;
+$theme-dark-background-color: #333;
+$theme-dark-text-color: #eee;
+$theme-dark-brand-color: #7fb7ff;
+$theme-dark-code-background-color: #272822;
+$theme-dark-site-background-color: #272822;
 
 $on-palm:          600px;
 $on-laptop:        800px;
@@ -35,6 +40,16 @@ $on-laptop:        800px;
 // }
 @mixin media-query($device) {
   @media screen and (max-width: $device) {
+    @content;
+  }
+}
+
+@mixin dark-mode {
+  @media (prefers-color-scheme: dark) {
+    @content;
+  }
+
+  .theme-dark &, &.theme-dark {
     @content;
   }
 }
