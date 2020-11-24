@@ -23,6 +23,14 @@
     &, &:active {
       color: $grey-color;
     }
+
+    .layout-post & {
+      line-height: 28px;
+    }
+  }
+
+  .layout-post & {
+    min-height: 28px;
   }
 }
 
@@ -38,6 +46,11 @@
   &:visited {
     color: $grey-color-dark;
   }
+
+  .layout-post & {
+    line-height: 28px;
+    font-size: 18px;
+  }
 }
 
 .site-nav {
@@ -46,6 +59,10 @@
   margin-right: $spacing-unit;
 
   background-color: $background-color;
+
+  .layout-post & {
+    line-height: 28px;
+  }
 
   .menu-icon {
     display: none;
@@ -58,43 +75,6 @@
     // Gaps between nav items, but not on the first one
     &:not(:first-child) {
       margin-left: 20px;
-    }
-  }
-
-  @include media-query($on-palm) {
-    position: absolute;
-    z-index: 1;
-    top: 9px;
-    right: 30px;
-    background-color: $background-color;
-    border: 1px solid $grey-color-light;
-    border-radius: 5px;
-    text-align: right;
-
-    .menu-icon {
-      display: block;
-      float: right;
-      width: 36px;
-      height: 26px;
-      margin-top: 10px;
-      text-align: center;
-      color: $grey-color;
-      text-decoration: none;
-    }
-
-    .trigger {
-      clear: both;
-      display: none;
-    }
-
-    &:hover .trigger {
-      display: block;
-      padding-bottom: 5px;
-    }
-
-    .page-link {
-      display: block;
-      padding: 5px 10px;
     }
   }
 }
@@ -180,13 +160,20 @@
  * Page content
  */
 .page-content {
-  padding: $spacing-unit 0 0 0;
+  padding: 56px 0 0 0;
   background-color: $splash-color;
 
+  .layout-post & {
+    padding-top: 28px;
+  }
+
   > .wrapper {
-    padding-top: 56px;
+    padding-top: $spacing-unit;
     padding-bottom: $spacing-unit;
     background-color: $background-color;
+    .layout-post & {
+      padding-top: 28px;
+    }
   }
 }
 
