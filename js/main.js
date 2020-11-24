@@ -8,7 +8,7 @@
       document.body.classList.add('theme-dark');
     }
 
-    button.addEventListener('click', function() {
+    button.addEventListener('click', function(ev) {
       if (currentTheme === 'dark') {
         currentTheme = undefined;
         localStorage.removeItem('theme');
@@ -18,6 +18,8 @@
         localStorage.setItem('theme', currentTheme);
         document.body.classList.add('theme-dark');
       }
+
+      ev.preventDefault();
     });
   });
 })();
