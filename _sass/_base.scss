@@ -98,6 +98,10 @@ a {
   &:hover {
     color: $text-color;
     text-decoration: underline;
+
+    @include dark-mode {
+      color: $theme-dark-text-color;
+    }
   }
 }
 
