@@ -79,7 +79,8 @@ if [ -z "$dry_run" ]; then
 fi
 ```
 
-## Step by Step
+Step by Step
+-----------------
 
 ```sh
 #!/usr/bin/env sh

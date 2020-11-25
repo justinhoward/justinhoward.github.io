@@ -172,7 +172,6 @@ This actually gives us a pretty good idea of the timings. The
 [cURL manpage](https://curl.se/docs/manpage.html) gives us a good description of
 each of these values:
 
-
 > **time_namelookup** The time, in seconds, it took from the start until the
 > name resolving was completed.
 
