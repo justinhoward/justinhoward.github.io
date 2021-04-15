@@ -33,7 +33,7 @@ Here is an example in Ruby
 ```ruby
 def user_is_valid?(user)
   return false if user.full_name.nil?
-  return false if user.email.nil? ^ user.phone.nil?
+  return false unless user.email.nil? ^ user.phone.nil?
   true
 end
 ```
