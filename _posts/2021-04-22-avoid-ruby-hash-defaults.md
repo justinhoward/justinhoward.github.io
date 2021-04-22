@@ -50,17 +50,17 @@ hash or array.
 ```ruby
 h = Hash.new([])
 h[:a] << 'foo' # => ['foo']
-h => # => {}
+h # => {}
 h[:b] # => ['foo']
 ```
 
 Wait, what happened? Where did `'foo'` go, and why is it in `:b`? Well you
-probably guessed it, when we mutate with `<<`, we actually mutated the default
+probably guessed it. When we mutate with `<<`, we actually mutated the default
 array. Not only did we not add the `:a` key, but we also changed the value we
 get when we request an unset key.
 
 We can solve this problem by using a block to create a new array whenever we
-request a default. This solves this problem and creates new ones.
+request a default. This solves a problem and creates new ones.
 
 With Dynamic Default
 ----------------------------
